@@ -1,0 +1,56 @@
+.FeaturesNumber {
+	margin-bottom: 3em;
+
+	&-description {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	&-container {
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		grid-gap: .5em;
+		padding: 0 $gutter;
+
+		@media screen and (min-width: 480px) {
+			grid-template-columns: repeat(4, 1fr);
+			padding: 0;
+		}
+	}
+
+	&-item {
+		background-color: #eee;
+		text-align: center;
+		color: $primary-color;
+		padding: 2em 0;
+		border-radius: 3px;
+
+		& > .icon {
+			font-size: 1.1em;
+
+		}
+
+		&Number {
+			margin: 0;
+			font-size: 1.3em;
+			position: relative;
+
+			&::after {
+				content: "";
+				position: absolute;
+				width: 10%;
+				height: 2px;
+				top: 100%;
+				left: 50%;
+				transform: translateX(-50%);
+				background-color: #ccc;
+			}
+		}
+
+		&Description {
+			color: #999;
+		}
+	}
+}

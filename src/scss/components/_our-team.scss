@@ -1,0 +1,36 @@
+.Our {
+	background: url('../img/banner1.jpg') center / cover no-repeat;
+	height: 150px;
+	position: relative;
+	background-attachment: fixed;
+	margin-bottom: 2em;
+
+	&::before {
+		content: "";
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		position: absolute;
+		background: rgba(#000, .6);
+	}
+
+	&-container {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&-title {
+		margin-right: 1em;
+		& span {
+			color: #FFF;
+		}
+	}
+
+	&-button {
+		position: relative;
+		z-index: 50;
+	}
+}

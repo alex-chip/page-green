@@ -1,0 +1,63 @@
+.Features {
+	margin-bottom: 2.5em;
+
+	&-title {
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 5%;
+			height: 2px;
+			top: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+			background: #666;
+		}
+	}
+
+	&-description {
+		color: #666;
+		font-size: .8em;
+		text-align: center;
+	}
+
+	&-containerItem {
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		grid-gap: .5em;
+
+		@media screen and (max-width: 768px) {
+			padding: 0 $gutter;
+		}
+
+		@media screen and (min-width: 480px) {
+			grid-template-columns: repeat(3,1fr);
+			grid-gap: $gutter
+		}
+
+		@media screen and (min-width: 768px) {
+			grid-template-columns: repeat(5,1fr);
+		}
+	}
+
+	&-item {
+		background: linear-gradient(
+			$primary-color,
+			$thirty-color
+		);
+		color: #fff;
+		text-align: center;
+		padding: 2em  0;
+		border-radius: 3px;
+
+		& > .icon {
+			font-size: 2em;
+		}
+
+		&Title {
+			text-transform: uppercase;
+			font-size: .8em;
+			font-weight: bold;
+		}
+	}
+}

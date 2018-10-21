@@ -1,0 +1,14 @@
+// Importar reset basico
+@import "./config/variables";
+@import "./config/basic-reset";
+
+@import "./fonts/icon-fonts";
+@import "./fonts/fonts";
+
+@import "./modules/modules";
+
+@import "./components/header";
+@import "./components/banner";
+@import "./components/features";
+@import "./components/our-team";
+@import "./components/features-number";

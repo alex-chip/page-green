@@ -1,0 +1,51 @@
+.Banner {
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: rgba(#000, .2);
+	}
+
+	&-img {
+		display: block;
+	}
+
+	&-copy {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		color:#FFF;
+		text-align: center;
+	}
+
+	&-title {
+		margin: 0 0;
+		font-size: 3.5em;
+		font-family: pacificoregular;
+	}
+
+	&-subtitle {
+		margin: 0 0 1em;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+
+	&-description {
+		font-size: .9em;
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+	}
+
+}
+
+.Button-banner {
+
+}
