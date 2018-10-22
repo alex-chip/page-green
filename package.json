@@ -18,7 +18,7 @@
     "metalangs": "parallelshell \"npm run sass\" \"npm run pug\" \"npm run watchify\"",
     "devserve": "parallelshell \"npm run metalangs\" \"npm run serve\"",
     "devproxy": "parallelshell \"npm run metalangs\" \"npm run proxy\"",
-    "imagemin": "imagemin \"./src/img/**.+(jpg|png)\" -o ./public/img/ -p=pngquant -p=jpeg-recompress",
+    "imagemin": "imagemin \"./src/img/**.+(jpg)\" -o ./public/img/ -p=jpeg-recompress",
     "iconmin": "imagemin \"./src/img/icons/**.+(jpg|png)\" -o ./public/img/icons/ -p=pngquant -p=jpeg-recompress",
     "webp": "imagemin \"./public/img/**.jpg\" -o ./public/img/ -p=webp",
     "svgmin": "imagemin \"./src/img/**.svg\" -o ./public/img/ -p=svgo",
