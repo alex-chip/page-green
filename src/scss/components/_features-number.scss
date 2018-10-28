@@ -17,11 +17,12 @@
 		@media screen and (min-width: 480px) {
 			grid-template-columns: repeat(4, 1fr);
 			padding: 0;
+			grid-gap: 2em;
 		}
 	}
 
 	&-item {
-		background-color: #eee;
+		background-color: rgba(#ccc, .2);
 		text-align: center;
 		color: $primary-color;
 		padding: 2em 0;

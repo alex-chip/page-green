@@ -346,9 +346,10 @@ img {
     @media screen and (min-width: 480px) {
       .FeaturesNumber-container {
         grid-template-columns: repeat(4, 1fr);
-        padding: 0; } }
+        padding: 0;
+        grid-gap: 2em; } }
   .FeaturesNumber-item {
-    background-color: #eee;
+    background-color: rgba(204, 204, 204, 0.2);
     text-align: center;
     color: #85DB00;
     padding: 2em 0;
